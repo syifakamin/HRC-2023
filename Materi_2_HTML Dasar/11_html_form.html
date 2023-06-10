@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HRC - 2023">
+    <meta name="keywords" content="html,css,javascript">
+    <meta name="author" content="amin syifa'">
+    <title>HTML FORM</title>
+</head>
+
+<body>
+    <form action="index.php" method="GET" enctype="multipart/form-data">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="isi username" required minlength="8" maxlength="64">
+        <br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="isi password" required minlength="8"
+            maxlength="64">
+        <br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="isi email" required minlength="8" maxlength="64">
+        <br>
+        <label for="telp">Telephone</label>
+        <input type="tel" name="telp" id="telp" placeholder="123-456-7890" required minlength="8" maxlength="64"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        <br>
+        <label for="birth">Tanggal Lahir</label>
+        <input type="date" name="birth" id="birth">
+        <br>
+        <label for="quantity">quantity</label>
+        <input type="number" name="quantity" id="quantity" min="0" max="99" value="00">
+        <br>
+
+        <label for="gelar">Gelar:</label>
+
+
+        <input type="radio" name="SKOM" id="SKOM" value="SKOM">
+        <label for="SKOM">S.Kom. </label>
+        <input type="radio" name="SPD" id="SPD" value="SPD">
+        <label for="SPD">S.Pd. </label>
+        <input type="radio" name="ST" id="ST" value="ST">
+        <label for="ST">S.T. </label>
+        <br>
+
+        <label for="pembayaran">pembayaran</label>
+        <select name="pembayaran" id="pembayaran">
+
+            <option value="Transfer Bank">Transfer Bank</option>
+            <option value="VISA">Visa</option>
+            <option value="MASTERCARD">Master Card</option>
+            <option value="DEBIT/CREDIT Card">Debit / Credit Card</option>
+
+        </select>
+
+        <br>
+
+        <label for="langganan">Mau Berlangganan.?</label>
+        <input type="checkbox" name="Langganan" id="langganan">
+        <br>
+        <label for="comment">Keterangan : </label>
+        <textarea name="comment" id="" cols="20" rows="4"></textarea>
+        <br>
+
+        <label for="file">Upload File : </label>
+        <input type="file" name="file" id="file" accept="image/jpg, image/png">
+
+        <hr>
+        <input type="reset" name="reset" id="reset">
+        <input type="submit" name="submit" id="submit">
+
+    </form>
+</body>
+
+</html>

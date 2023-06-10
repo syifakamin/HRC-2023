@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+</head>
+
+<body>
+    <a href="https://google.com">
+        <button style="font-size:25px; background-color:grey; color:lightblue; border-radius:25px">Cara Diet
+            Instant</button>
+    </a>
+    <hr>
+    <br>
+    <a href="10_1_button_next_page.html">
+        <button
+            style="font-size:25px; background-color:rgb(65, 173, 65); color:rgb(234, 236, 236); border-radius:25px">Tombol
+            pindah page ke 2
+            Instant</button>
+    </a>
+
+    <br>
+    <hr>
+
+    <button onclick="aktifkanFungsiJS()" style="font-size:25px; background-color:beige;"> button javascript</button>
+
+    <p id="changeMe">silahkan ganti aku</p>
+
+    <script>
+        function aktifkanFungsiJS() {
+            document.getElementById("changeMe").innerHTML = "Sudah tak ganti, NYOOOHH!!";
+        }
+    </script>
+</body>
+
+</html>
