@@ -1,0 +1,22 @@
+.container-descendant{
+    border: 2px solid;
+}
+
+/* contoh turunan */
+
+/* .container-descendant p{
+    background-color: yellowgreen;
+} */
+
+/* contoh anak */
+
+/* .container-descendant > p {
+    background-color: yellow;
+} */
+
+/* contoh saudara */
+
+/* .container-descendant ~ p {
+    background-color: yellowgreen;
+} */
+

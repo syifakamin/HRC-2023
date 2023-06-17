@@ -1,0 +1,30 @@
+div{
+    /* div akan ambil semua lebar dari layar */
+    background-color: red;
+    width: 100px;
+    height: 100px;
+
+    /* display: block; */
+    /* display block akan membuat lebar dan tinggi yang sama dengan setting width & height */
+
+    /* display: inline; */
+    /* display inline akan membuat ukuran sesuai dengan konten */
+
+    /* display: inline-block; */
+    /* display inline-block digunakan untuk membuat ukuran sesuai tinggi konten tapi lebar sesuai height dan width */
+
+    /* display: none; */
+    /* display: none digunakan untuk menghilangkan dan menghapus semua block dan konten */
+
+    /* visibility: hidden; */
+    /* visibility: hidden digunakan untuk tidak melihatkan konten tetapi masih ada block yang ada */
+
+}
+
+span{
+    /* span hanya ambil lebar dari konten */
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    /* display: block; */
+}

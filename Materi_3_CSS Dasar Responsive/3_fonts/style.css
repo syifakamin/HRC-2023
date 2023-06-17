@@ -1,0 +1,17 @@
+@font-face {
+    font-family: Palmeyra;
+    src: url(fonts/Palmeyra.otf);
+}
+
+h1{
+    font-family: Kablammo,verdana, arial;
+    /* format for font (primary font, Fallback font / backup font) */
+}
+
+p{
+    font-family: palmeyra, verdana;
+    font-size: 1em;
+    font-weight: normal;
+    font-style: italic;
+}
+

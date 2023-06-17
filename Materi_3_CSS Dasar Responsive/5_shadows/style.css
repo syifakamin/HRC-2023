@@ -1,0 +1,10 @@
+h1{
+    text-shadow: 2px 3px 5px rgb(221, 36, 36), -3px -3px rgb(32, 211, 16); /* Format (horizontal offset | vertical offset | blurring | color */   
+}
+
+#box1{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    box-shadow: 10px 10px 5px;
+}

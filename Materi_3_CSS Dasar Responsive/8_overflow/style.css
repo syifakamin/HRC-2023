@@ -1,0 +1,21 @@
+.overflow{
+    border: 3px solid;
+    height: 50px;
+    overflow: scroll;
+    
+    /* 
+    
+    perbedaan antara overflow hidden dan clip
+
+    hidden akan menyembuyikan, bisa diambil semua konten dengan di copy
+
+    tapi tidak dengan clip, di hanya batasi yang overflow dan diberikan margin
+    */
+/*     
+    overflow:visible;
+    overflow: hidden;
+    overflow: scroll;
+
+    overflow: clip;
+    overflow-clip-margin: 20px; */
+}

@@ -1,0 +1,45 @@
+a:link{
+    color: yellowgreen;
+}
+
+a:hover{
+    color: rgb(88, 128, 7);
+    font-size: 1.5em;
+}
+
+a:active{
+    font-size: 1.5em;
+    color: brown;
+}
+
+a:visited{
+    color: darkblue;
+}
+
+/* -------------- */
+
+li:hover{
+    background-color: yellow;
+}
+
+li:not(:hover){
+    background-color: blue;
+}
+
+li:nth-child(3n) /* anak ke berapa | isi "odd" untuk ganjil dan isi "even" untuk genap | isi "4n" untuk anak terhitung dari 4*/ {
+    background-color: white;
+}
+
+
+/* -------------- */
+
+#greeting p{
+    background-color: hotpink;
+    padding: 10px;
+    display: none;
+}
+
+#greeting:hover p{
+    display: block;
+}
+

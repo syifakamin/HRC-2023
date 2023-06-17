@@ -1,0 +1,12 @@
+*{
+    color: aliceblue;
+}
+body{
+    background-image: url(img/image1.jpg);
+    background-repeat: no-repeat; /* gambar tidak akan mengulang */
+    background-position: center; /* akan membuat tengah secara horizontal */
+    background-attachment: fixed;/* gambar akan dibuat fix ditengah layar */
+    background-size: cover; /* gambar akan dibuat menutupi semua bagian dari layar secara normal */
+    
+    
+}

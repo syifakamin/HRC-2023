@@ -1,0 +1,20 @@
+
+body{
+    background-color: black;
+}
+
+h2{
+    color: white;
+}
+
+p{
+    color: aliceblue;
+}
+
+#p1 {
+    color: aqua;
+}
+
+.ganjil{
+    color: yellowgreen;
+}
