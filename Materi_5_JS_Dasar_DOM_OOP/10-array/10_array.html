@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAY</title>
+</head>
+
+<body>
+
+    <script>
+        let arrayBaru = [];
+
+        let arrayNama = ["Amin", "Syifa'", "Budi", "Yanto", 1, true];
+
+        console.log(arrayNama);
+
+        document.write(arrayNama);
+        document.write("<br>");
+        document.write(arrayNama[0]);
+        document.write("<br>");
+        document.write(arrayNama[1]);
+        document.write("<br>");
+        document.write(isNaN(arrayNama[1])); //dicek, apakah aray di index 1 itu bukan NUMBER (NaN)?
+
+        //cara tambahkan array ditengah running
+
+        const arrayLagi = [];
+        arrayLagi.push("aku");
+        arrayLagi.push("belajar", "javascript");
+
+
+        console.table(arrayLagi);
+
+        //cara dapatkan panjang array
+        document.write("<br>");
+        document.write(arrayLagi.length);
+
+
+        //cara ambil data di index tertentu array
+        document.write("<br>");
+        document.write(arrayLagi[2]);
+
+        //cara ubah isi array yang sudah ada
+        document.write("<br>");
+        document.write(arrayLagi[2] = "database");
+
+        //cara hapus index diarray 
+        delete arrayLagi[2];
+
+        document.write("<hr>");
+        document.write(arrayLagi);
+
+        //isi lagi array di pointing yang sudah dihapus
+        arrayLagi[2] = "isi lagi";
+
+        //contoh array dalam array (multidimensional array)
+        arrayLagi.push(["beras", "susu", "popok"]);
+
+        console.table(arrayLagi);
+
+    </script>
+</body>
+
+</html>

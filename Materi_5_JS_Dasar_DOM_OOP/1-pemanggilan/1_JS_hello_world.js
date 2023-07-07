@@ -1,0 +1,1 @@
+document.writeln("hello from external call");

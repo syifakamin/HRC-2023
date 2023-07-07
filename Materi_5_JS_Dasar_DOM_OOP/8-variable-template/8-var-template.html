@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        const namaDepan = "Amin";
+        const namaBelakang = "Syifa'";
+        const nilai = 70;
+
+        const template_baru = `Nama User : ${namaDepan} ${namaBelakang}, Lulus? : ${nilai > 75}`;
+
+        //const template_lama = "Nama User : " + namaDepan + " " + namaBelakang;
+
+
+        //console.info(template_baru + tempat);
+        console.log(template_baru);
+        console.log(status);
+
+        //multilinestring
+        const multilineString =
+            `Halo saya ${namaDepan} ${namaBelakang}
+saya belajar javascript di HRC 2023
+dan nilai saya ${nilai} `;
+
+        document.write("<pre style=color:red;>")
+        document.write(multilineString)
+        document.write("</pre>")
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //buat function dengan nama function tidak boleh ada spasi dan diikuti ()
+        function tulisAkuBelajar() {
+            document.write(`<p>aku belajar javascript</p>`);
+        }
+
+        //memanggil function
+        tulisAkuBelajar();
+        tulisAkuBelajar();
+        tulisAkuBelajar();
+
+        //---------------------------------------------------------------------
+        document.write("<br><hr>")
+
+
+        //Function dengan parameter (namadepan dan namabelakang)
+        function sayHello(namadepan, namabelakang) {
+            document.write(`<p>Hello ${namadepan} ${namabelakang}</p>`);
+        }
+
+        sayHello("Amin", "Syifa'");
+        sayHello("Putri", "Dwi");
+
+        //---------------------------------------------------------------------
+        document.write("<br><hr>")
+
+
+        //function return value
+        function sayHelloAgain(namadepan, namabelakang) {
+            const say = `Halo ${namadepan} ${namabelakang}`;
+            return say;
+        }
+
+        //memanggil function dan menangkap return value nya
+        const hasil = sayHelloAgain("Putri", "Dwi");
+        document.write(`<p>${hasil}</p>`)
+
+        //---------------------------------------------------------------------
+        document.write("<br><hr>")
+
+        //memanggil beberapa return value di function
+
+        function getFinalValue(value) {
+            if (value > 90) {
+                return 'A';
+            } else if (value > 80) {
+                return 'B';
+            } else if (value > 70) {
+                return 'C';
+            } else if (value > 60) {
+                return 'D';
+            } else {
+                return 'E';
+            }
+        }
+
+        const finalValue = getFinalValue(95);
+        document.write(`<p>${finalValue}</p>`)
+
+        //---------------------------------------------------------------------
+        document.write("<br><hr>")
+
+
+        //menghentikan eksekusi function dengan return
+        function isContaint(array, searchValue) {
+            for (const element of array) {
+                console.info(`iterasi element ${element}`);
+                if (element === searchValue) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        const array = [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024];
+        const search = 128;
+        const found = isContaint(array, search);
+        document.write(`<p>${found}</p>`);
+    </script>
+</body>
+
+</html>

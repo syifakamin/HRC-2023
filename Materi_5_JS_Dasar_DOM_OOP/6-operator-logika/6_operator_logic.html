@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logic</title>
+</head>
+
+<body>
+
+    <script>
+        const nilaiTugas1 = 90;
+        const nilaiAbsen = 70;
+
+        const batasLulusTugas = nilaiTugas1 > 75; //nilai FALSE
+        document.write('<br>');
+        document.write('Lulus ujian? ' + batasLulusTugas);
+        const batasLulusAbsen = nilaiAbsen > 75; //nilai FALSE
+        document.write('<br>');
+        document.write('lulus absen? ' + batasLulusAbsen);
+
+        //jika bataslulustugas TRUE dan bataslulusabsen TRUE maka lulus TRUE
+        const lulus = batasLulusTugas && batasLulusAbsen; //Operator AND
+        //const lulus = batasLulusTugas || batasLulusAbsen; //Operator NOR
+        //const lulus = batasLulusTugas != batasLulusAbsen; //Operator OR
+        document.writeln("<p>" + lulus + "</p>");
+
+    </script>
+
+</body>
+
+</html>

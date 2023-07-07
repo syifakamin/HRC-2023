@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        //ini hasil SALAH
+        const value1 = "1";
+        const value2 = 1;
+        const sum = value1 + value2;
+
+        document.write(`<p> ${sum}</p>`);
+
+        //sudah dikonversi - Contoh string to Int
+        const value1New = parseInt("asb"); //NaN (Not a Number)
+        const value2New = 1;
+
+        const sumNew = value1New + value2New;
+
+        document.write(`<p> ${sumNew}</p>`);
+
+        //contoh lainnya
+        document.write(`<p> ${parseInt("1.2")}</p>`); //1 pecahannya dihilangkan
+        document.write(`<p> ${parseFloat("1.9")}</p>`); //1.2 pecahannya ditampilkan
+        document.write(`<p> ${Number("1.2")}</p>`); //1.2 flexible bisa pake pecahan bisa dihilangkan 
+
+        //--------------------------------------------------------
+
+        //contoh konversi int to string
+
+        const x = 1;
+        const y = 2;
+
+        const hasil = x.toString() + y.toString();
+        document.write(`${hasil}`);
+    </script>
+</body>
+
+</html>

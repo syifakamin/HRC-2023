@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+
+<body>
+
+    <script>
+
+        //standart cara membuat object, mengisi dan menghapus
+        const hewan = {};
+
+        hewan["nama"] = "kucing";
+        hewan["makanan"] = "ikan pindang";
+        hewan["jumlah kaki"] = 4;
+        hewan["Punya_ekor"] = true;
+        hewan["nyawa"] = 9;
+
+        delete hewan["nyawa"];
+
+        console.table(hewan);
+
+        //membuat object dengan properties
+
+        const namaOrang = "putri dwi utari"
+        const orang = {
+            nama: `${namaOrang}`,
+            alamat: "gresik",
+            umur: 21,
+            kuliah: true
+        };
+
+        console.table(orang);
+
+        //cara akses property object
+
+        document.writeln(`Nama : ${orang.nama} <br>`);
+        document.writeln(`Alamat : ${orang.alamat} <br>`);
+        document.writeln(`Umur : ${orang.umur} <br>`);
+        document.writeln(`masih kuliah? : ${orang.kuliah} <br>`);
+        document.writeln(`Hewan yang dimiliki : ${hewan.nama} <br>`);
+        document.writeln(`Makananya apa : ${hewan.makanan} <br>`);
+        document.writeln(`Punya ekor? : ${hewan.Punya_ekor} <br>`);
+
+
+    </script>
+</body>
+
+</html>

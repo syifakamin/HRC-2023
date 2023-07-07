@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- 
+    Operator (+) tambah
+    Operator (-) kurang
+    Operator (*) kali
+    Operator (**) exponensial (pangkat)
+    Operator (/) pembagian
+    Operator (%) sisa bagi
+     -->
+
+    <script>
+
+        //ARITMATIKA
+        let result = 1 + 2; //tambah
+        document.writeln("<p> 1 + 2 =" + result + "</p>");
+        let originalResult = result;
+
+        result = result - 1; //kurang
+        document.writeln("<p>" + originalResult + " - 1 = " + result + "</p>");
+        originalResult = result;
+
+        result = result * 2; //kali
+        document.writeln("<p>" + originalResult + " * 2 = " + result + "</p>")
+        originalResult = result;
+
+        //AUGMENTED ASSIGNMENTS
+        document.write("<hr>")
+
+        let result_aa = 1 + 2; //tambah
+        document.writeln("<p> 1 + 2 =" + result_aa + "</p>");
+        let originalResult_aa = result_aa;
+
+        result_aa -= 1; //kurang
+        document.writeln("<p>" + originalResult_aa + " - 1 = " + result_aa + "</p>");
+        originalResult_aa = result_aa;
+
+        result_aa *= 2; //kali
+        document.writeln("<p>" + originalResult_aa + " * 2 = " + result_aa + "</p>")
+        originalResult_aa = result_aa;
+
+        //Operator UNARY
+        document.write("<hr>");
+
+        let unary = +1;
+        document.writeln("<p>" + unary + "</p>");
+
+        unary--;
+        document.writeln("<p>" + unary + "</p>");
+
+        unary++;
+        document.writeln("<p>" + unary + "</p>");
+
+        unary = -unary;
+        document.writeln("<p>" + unary + "</p>");
+    </script>
+</body>
+
+</html>
