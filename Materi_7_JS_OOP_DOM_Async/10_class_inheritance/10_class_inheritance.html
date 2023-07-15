@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        class Karyawan {
+            salam(nama) {
+                document.write(`hi ${nama}, saya adalah karyawan ${this.nama} <br><hr>`);
+            }
+        }
+
+        class Manager extends Karyawan {
+            salam(nama) {
+                document.write(`hi ${nama}, saya adalah Manager ${this.nama} <br>`);
+            }
+        }
+
+        const budi = new Karyawan();
+        budi.nama = "budi";
+        budi.salam("Joko");
+
+        const Joko = new Manager();
+        Joko.nama = "Joko";
+        Joko.salam("Budi");
+
+        console.info(budi);
+        console.info(Joko);
+    </script>
+</body>
+
+</html>

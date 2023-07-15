@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        //ini membuat construction
+        function Person() {
+            this.firstName = ""
+            this.lastName = ""
+        }
+
+        //ini membuat veriabel baru dari konstruksi 
+        const amin = new Person();
+
+        //ini mengisi konstruksi didalem variabel
+        amin.firstName = "amin";
+        amin.lastName = "syifak";
+
+
+        const andri = new Person();
+        andri.firstName = "kharisma";
+        andri.lastName = "Andri";
+
+        console.log(amin);
+        console.log(andri);
+    </script>
+</body>
+
+</html>

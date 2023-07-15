@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let arrayBaru = []
+
+        let isiarray = ["Amin", "Syifa'", "Nabila", "Salwa", "Bagus", 123, true];
+
+        console.table(isiarray);
+        document.write(isiarray[3] + "<br>");
+        document.write(isNaN(isiarray[5]));
+
+        //cara isi array
+        isiarray.push("HRC 2023");
+        console.table(isiarray);
+
+        delete (isiarray[3]);
+        console.table(isiarray);
+
+        isiarray[3] = "jarjit";
+        console.table(isiarray);
+    </script>
+
+</body>
+
+</html>

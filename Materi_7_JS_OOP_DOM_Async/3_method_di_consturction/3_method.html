@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        //ini membuat construction
+        function Person() {
+            this.firstName = "";
+            this.lastName = "";
+            //ini method di construction
+            this.sayHello = function (nama) {
+                console.info(`Hello ${nama}, namaku adalah ${this.firstName}`);
+                document.writeln(`Halo ${nama}, namaku adalah ${this.firstName} <br>`);
+            }
+
+        }
+
+        //ini membuat veriabel baru dari konstruksi 
+        const amin = new Person();
+
+        //ini mengisi konstruksi didalem variabel
+        amin.firstName = "amin";
+        amin.lastName = "syifak";
+        //pemanggilan method
+        amin.sayHello("indah");
+
+
+        const andri = new Person();
+        andri.firstName = "kharisma";
+        andri.lastName = "Andri";
+        //pemanggilan method
+        andri.sayHello("sari");
+
+        console.log(amin);
+        console.log(andri);
+    </script>
+</body>
+
+</html>

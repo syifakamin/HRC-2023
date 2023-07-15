@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        function Pegawai(firstName) {
+            this.firstName = firstName;
+            this.ucapSalam = function (namaToko) {
+                console.log(`selamat datang di ${namaToko}, nama saya ${this.firstName}. Selamat berbelanja`);
+            }
+        }
+
+
+        function Manager(firstName, lastName) {
+            this.lastName = lastName;
+            Pegawai.call(this, firstName);
+        }
+
+        const andri = new Manager("Andri", "Purnama");
+
+        console.info(andri);
+    </script>
+</body>
+
+</html>

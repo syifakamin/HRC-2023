@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        const tugas1 = 20;
+        const tugas2 = 80;
+
+        const KKM = tugas1 > 75;
+        document.write("<br>");
+        document.write("lulus ujian? " + KKM);
+        const KKM2 = tugas2 > 75;
+        document.write("<br>");
+        document.write("lulus ujian? " + KKM2);
+
+        document.write("<br>");
+        //const lulus = KKM && KKM2;
+        const lulus = KKM != KKM2;
+        //const lulus = KKM || KKM2;
+        document.write("Apakah lulus keduanya? " + lulus);
+    </script>
+</body>
+
+</html>
