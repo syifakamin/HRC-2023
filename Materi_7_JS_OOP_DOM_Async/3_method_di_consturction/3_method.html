@@ -13,10 +13,10 @@
 
         //ini membuat construction
         function Person() {
-            this.firstName = "";
-            this.lastName = "";
+            this.firstName = ""; //property
+            this.lastName = ""; //property
             //ini method di construction
-            this.sayHello = function (nama) {
+            this.sayHello = function (nama) { //method
                 console.info(`Hello ${nama}, namaku adalah ${this.firstName}`);
                 document.writeln(`Halo ${nama}, namaku adalah ${this.firstName} <br>`);
             }
